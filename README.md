@@ -47,5 +47,19 @@
 
 1. **リポジトリのクローン**
    ```bash
-   git clone [https://github.com/YourUsername/your-repo-name.git](https://github.com/YourUsername/your-repo-name.git)
-   cd your-repo-name
+   git clone [https://github.com/mokumoku1227/orchestra-portal](https://github.com/mokumoku1227/orchestra-portal)
+   cd orchestra-portal
+   ```
+
+2. **必要なライブラリのインストール**
+   ```bash
+   pip install streamlit pandas
+   ```
+
+3. **アプリケーションの起動**
+   ```bash
+   streamlit run app.py
+   ```
+
+## 🔐 セキュリティとプライバシーについて
+本アプリケーションはポートフォリオ用のデモ環境を想定しているため、データベースへの永続化は行わず st.session_state を用いたインメモリ動作となっています（ブラウザをリロードすると初期データに戻ります）。
